@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: LearnDash H5P Leaderboard
+ * Plugin Name: H5P Leaderboard
  * Description: Provides a shortcode [pfk_h5p_leaderboard] to display H5P results leaderboards,
  * broken down by H5P ID, H5P Title, User Name, User ID, Date, and Score.
  * Version: 1.0.0
