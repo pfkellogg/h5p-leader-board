@@ -177,7 +177,7 @@ function h5p_leaderboard_shortcode( $atts ) {
             $score       = absint( $row->score );
             $max_score   = absint( $row->max_score );
             // Format date to a more readable format.
-            $result_date = ! empty( $row->result_date ) ? date_i18n( get_option( 'date_format' ) . ' ' . get_option( 'time_format' ), strtotime( $row->result_date ) ) : 'N/A';
+            $result_date = ! empty( $row->result_date ) ? date_i18n( get_option( 'date_format' ), strtotime( $row->result_date ) ) : 'N/A';
 
             // Calculate percentage if max_score is not zero, otherwise just show score/max_score.
             $display_score = ( $max_score > 0 ) ? sprintf( '%d/%d (%.0f%%)', $score, $max_score, ( $score / $max_score ) * 100 ) : sprintf( '%d/%d', $score, $max_score );
